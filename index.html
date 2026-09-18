@@ -516,9 +516,9 @@
 
   // ---------- three depth layers ----------
   const layers = [
-    {cls:'layer-back',  count:compact ? 12 : 30, hMin:68, hMax:116, scale:1.1,  yLift:10, delayBase:0.15},
-    {cls:'layer-mid',   count:compact ? 15 : 36, hMin:90, hMax:146, scale:1.28, yLift:4,  delayBase:0.4},
-    {cls:'layer-front', count:compact ? 18 : 42, hMin:106, hMax:184, scale:1.54, yLift:0,  delayBase:0.75},
+    {cls:'layer-back',  count:compact ? 12 : 30, hMin:68, hMax:116, scale:compact ? 1.22 : 1.1,  yLift:10, delayBase:0.15},
+    {cls:'layer-mid',   count:compact ? 15 : 36, hMin:90, hMax:146, scale:compact ? 1.42 : 1.28, yLift:4,  delayBase:0.4},
+    {cls:'layer-front', count:compact ? 18 : 42, hMin:106, hMax:184, scale:compact ? 1.7 : 1.54, yLift:0,  delayBase:0.75},
   ];
 
   layers.forEach(layer=>{
