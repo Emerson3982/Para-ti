@@ -242,9 +242,9 @@
     .layer-back,.layer-mid{ filter:none; }
     .bloom{ filter:none; }
     .sway{ animation:none; }
-    .stem{ animation-duration:.8s; }
-    .leaf{ animation-duration:.3s; }
-    .bloom{ animation-duration:.45s; }
+    .stem{ animation-duration:1.2s; }
+    .leaf{ animation-duration:.45s; }
+    .bloom{ animation-duration:.7s; }
     #message{ top:22%; width:min(90vw, 420px); }
     #eyebrow{ font-size:10px; letter-spacing:.2em; margin-bottom:7px; }
     #title{ font-size:clamp(32px, 11vw, 46px); margin-bottom:9px; }
@@ -526,7 +526,7 @@
       const x = (i/(layer.count-1))*1000 + (Math.random()-0.5)*6;
       const height = layer.hMin + Math.random()*(layer.hMax-layer.hMin);
       const kindIdx = Math.floor(Math.random()*palettes.length);
-      const delay = layer.delayBase + Math.random()*(compact ? 0.7 : 2.2) + (x/1000)*(compact ? 0.25 : 0.7);
+      const delay = layer.delayBase + Math.random()*(compact ? 1.8 : 2.2) + (x/1000)*(compact ? 0.5 : 0.7);
       const flower = makeFlower(x, height + layer.yLift, kindIdx, delay, layer.scale, layer.cls);
       svg.appendChild(flower);
     }
